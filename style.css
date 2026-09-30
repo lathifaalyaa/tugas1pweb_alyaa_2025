@@ -1,0 +1,1171 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+}
+
+
+/* =====================================
+   WARNA WEBSITE
+===================================== */
+
+:root {
+
+    --blue-dark: #0b3d70;
+
+    --blue: #2585df;
+
+    --blue-light: #5aaeff;
+
+    --blue-soft: #eaf6ff;
+
+    --white: #ffffff;
+
+    --text: #173b5c;
+
+    --gray: #66829c;
+
+}
+
+
+/* =====================================
+   BODY
+===================================== */
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--text);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #f8fcff,
+            #e9f6ff
+        );
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+
+    width: 90%;
+
+    max-width: 1150px;
+
+    margin: 20px auto;
+
+    padding: 15px 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.92
+        );
+
+    border-radius: 20px;
+
+    box-shadow:
+
+        0 10px 35px
+        rgba(
+            25,
+            118,
+            210,
+            0.12
+        );
+
+    position: sticky;
+
+    top: 15px;
+
+    z-index: 1000;
+
+}
+
+
+/* LOGO */
+
+.logo {
+
+    font-size: 27px;
+
+    font-weight: 800;
+
+    color:
+        var(--blue-dark);
+
+}
+
+
+.logo span {
+
+    color:
+        var(--blue);
+
+}
+
+
+/* MENU */
+
+.nav-menu {
+
+    display: flex;
+
+    gap: 28px;
+
+}
+
+
+.nav-menu a {
+
+    text-decoration: none;
+
+    color:
+        var(--text);
+
+    font-weight: 600;
+
+    transition:
+        0.3s;
+
+}
+
+
+.nav-menu a:hover {
+
+    color:
+        var(--blue);
+
+}
+
+
+/* MENU HP */
+
+.menu-btn {
+
+    display: none;
+
+    border: none;
+
+    background: none;
+
+    font-size: 25px;
+
+    color:
+        var(--blue-dark);
+
+    cursor: pointer;
+
+}
+
+
+/* =====================================
+   HOME
+===================================== */
+
+.home {
+
+    width: 90%;
+
+    max-width: 1150px;
+
+    min-height: 650px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr
+        0.8fr;
+
+    align-items: center;
+
+    gap: 50px;
+
+}
+
+
+/* GREETING */
+
+.greeting {
+
+    font-size: 25px;
+
+    color:
+        var(--blue);
+
+    font-weight: bold;
+
+}
+
+
+/* NAMA */
+
+.home h1 {
+
+    font-size:
+        clamp(
+            42px,
+            6vw,
+            72px
+        );
+
+    line-height: 1;
+
+    color:
+        var(--blue-dark);
+
+    margin:
+
+        10px
+
+        0
+
+        20px;
+
+    letter-spacing:
+        -2px;
+
+}
+
+
+/* JURUSAN */
+
+.home h2 {
+
+    font-size: 22px;
+
+    color:
+        var(--blue);
+
+    margin-bottom:
+        15px;
+
+}
+
+
+/* DESKRIPSI */
+
+.intro {
+
+    max-width: 650px;
+
+    font-size: 17px;
+
+    color:
+        var(--gray);
+
+}
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+.btn {
+
+    padding:
+        13px 27px;
+
+    border-radius:
+        30px;
+
+    text-decoration:
+        none;
+
+    font-weight:
+        bold;
+
+    transition:
+        0.3s;
+
+}
+
+
+.btn-primary {
+
+    background:
+        var(--blue);
+
+    color:
+        white;
+
+}
+
+
+.btn-outline {
+
+    background:
+        white;
+
+    border:
+        2px solid
+        var(--blue);
+
+    color:
+        var(--blue);
+
+}
+
+
+.btn:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+
+        0 10px 25px
+        rgba(
+            25,
+            118,
+            210,
+            .2
+        );
+
+}
+
+
+/* =====================================
+   FOTO
+===================================== */
+
+.photo-container {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+/*
+   FOTO DIBUAT OVAL/PORTRAIT
+   supaya tidak terlalu zoom
+*/
+
+.photo-circle {
+
+    width: 330px;
+
+    height: 390px;
+
+    border-radius: 50%;
+
+    background:
+        #dff3ff;
+
+    border:
+        8px solid
+        white;
+
+    outline:
+        5px solid
+        var(--blue-light);
+
+    box-shadow:
+
+        0 20px 50px
+        rgba(
+            25,
+            118,
+            210,
+            .25
+        );
+
+    overflow: hidden;
+
+}
+
+
+/* FOTO */
+
+.photo-circle img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    /*
+       Mengatur posisi foto.
+       Bisa diubah kalau wajah
+       masih terlalu ke atas/bawah.
+    */
+
+    object-position:
+        center center;
+
+    display: block;
+
+}
+
+
+/* =====================================
+   DEKORASI BULAT
+===================================== */
+
+.dot {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background:
+        var(--blue-light);
+
+}
+
+
+.dot-1 {
+
+    width: 30px;
+
+    height: 30px;
+
+    top: 10px;
+
+    right: 20px;
+
+}
+
+
+.dot-2 {
+
+    width: 18px;
+
+    height: 18px;
+
+    bottom: 35px;
+
+    left: 15px;
+
+}
+
+
+.dot-3 {
+
+    width: 12px;
+
+    height: 12px;
+
+    top: 90px;
+
+    left: 20px;
+
+}
+
+
+/* =====================================
+   SECTION
+===================================== */
+
+.section {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding:
+        90px 0;
+
+    text-align:
+        center;
+
+}
+
+
+.section-label {
+
+    color:
+        var(--blue);
+
+    font-size:
+        13px;
+
+    font-weight:
+        bold;
+
+    letter-spacing:
+        3px;
+
+    margin-bottom:
+        5px;
+
+}
+
+
+.section-title {
+
+    font-size:
+        45px;
+
+    color:
+        var(--blue-dark);
+
+    margin-bottom:
+        30px;
+
+}
+
+
+/* =====================================
+   ABOUT
+===================================== */
+
+.about-box {
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .85
+        );
+
+    padding:
+        35px;
+
+    border-radius:
+        25px;
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(
+            25,
+            118,
+            210,
+            .1
+        );
+
+    color:
+        var(--gray);
+
+}
+
+
+.about-box p {
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.about-box strong {
+
+    color:
+        var(--blue-dark);
+
+}
+
+
+/* =====================================
+   EDUCATION
+===================================== */
+
+.timeline {
+
+    max-width:
+        750px;
+
+    margin:
+        auto;
+
+    text-align:
+        left;
+
+    position:
+        relative;
+
+}
+
+
+.timeline::before {
+
+    content: "";
+
+    position:
+        absolute;
+
+    width:
+        3px;
+
+    background:
+        var(--blue-light);
+
+    top:
+        0;
+
+    bottom:
+        0;
+
+    left:
+        10px;
+
+}
+
+
+.timeline-item {
+
+    position:
+        relative;
+
+    padding-left:
+        50px;
+
+    margin-bottom:
+        30px;
+
+}
+
+
+.timeline-dot {
+
+    position:
+        absolute;
+
+    left:
+        0;
+
+    top:
+        20px;
+
+    width:
+        23px;
+
+    height:
+        23px;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--blue);
+
+    border:
+        5px solid
+        #d9efff;
+
+}
+
+
+.timeline-content {
+
+    background:
+        white;
+
+    padding:
+        25px;
+
+    border-radius:
+        20px;
+
+    box-shadow:
+
+        0 10px 35px
+        rgba(
+            25,
+            118,
+            210,
+            .1
+        );
+
+}
+
+
+.date {
+
+    color:
+        var(--blue);
+
+    font-weight:
+        bold;
+
+    font-size:
+        14px;
+
+}
+
+
+.timeline-content h3 {
+
+    color:
+        var(--blue-dark);
+
+    margin:
+        5px 0;
+
+}
+
+
+/* =====================================
+   SKILLS
+===================================== */
+
+.skills {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap:
+        20px;
+
+}
+
+
+.skill-card {
+
+    text-align:
+        left;
+
+    background:
+        white;
+
+    padding:
+        30px;
+
+    border-radius:
+        22px;
+
+    box-shadow:
+
+        0 10px 35px
+        rgba(
+            25,
+            118,
+            210,
+            .1
+        );
+
+    transition:
+        0.3s;
+
+}
+
+
+.skill-card:hover {
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.skill-number {
+
+    color:
+        var(--blue-light);
+
+    font-weight:
+        bold;
+
+}
+
+
+.skill-card h3 {
+
+    font-size:
+        25px;
+
+    color:
+        var(--blue-dark);
+
+    margin:
+        8px 0;
+
+}
+
+
+/* =====================================
+   CONTACT
+===================================== */
+
+.contact {
+
+    width:
+        90%;
+
+    max-width:
+        800px;
+
+    margin:
+        auto;
+
+    text-align:
+        center;
+
+    padding:
+        100px 0;
+
+}
+
+
+.contact h2 {
+
+    font-size:
+        45px;
+
+    color:
+        var(--blue-dark);
+
+}
+
+
+.contact p {
+
+    color:
+        var(--gray);
+
+}
+
+
+.social-buttons {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    gap:
+        15px;
+
+    flex-wrap:
+        wrap;
+
+    margin-top:
+        25px;
+
+}
+
+
+.social-buttons a {
+
+    padding:
+        12px 25px;
+
+    border-radius:
+        25px;
+
+    background:
+        var(--blue);
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    font-weight:
+        bold;
+
+    transition:
+        .3s;
+
+}
+
+
+.social-buttons a:hover {
+
+    background:
+        var(--blue-dark);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+
+    text-align:
+        center;
+
+    padding:
+        25px;
+
+    background:
+        var(--blue-dark);
+
+    color:
+        white;
+
+    font-size:
+        14px;
+
+}
+
+
+/* =====================================
+   RESPONSIVE TABLET / HP
+===================================== */
+
+@media (max-width: 800px) {
+
+
+    .menu-btn {
+
+        display:
+            block;
+
+    }
+
+
+    .nav-menu {
+
+        display:
+            none;
+
+        position:
+            absolute;
+
+        top:
+            70px;
+
+        left:
+            0;
+
+        right:
+            0;
+
+        background:
+            white;
+
+        border-radius:
+            15px;
+
+        padding:
+            15px;
+
+        flex-direction:
+            column;
+
+        gap:
+            5px;
+
+        box-shadow:
+
+            0 10px 30px
+            rgba(
+                0,
+                0,
+                0,
+                .1
+            );
+
+    }
+
+
+    .nav-menu.active {
+
+        display:
+            flex;
+
+    }
+
+
+    .nav-menu a {
+
+        padding:
+            10px;
+
+        text-align:
+            center;
+
+    }
+
+
+    /* HOME */
+
+    .home {
+
+        grid-template-columns:
+            1fr;
+
+        text-align:
+            center;
+
+        padding:
+            80px 0;
+
+    }
+
+
+    .intro {
+
+        margin:
+            auto;
+
+    }
+
+
+    .buttons {
+
+        justify-content:
+            center;
+
+    }
+
+
+    /* FOTO */
+
+    .photo-container {
+
+        order:
+            -1;
+
+    }
+
+
+    .photo-circle {
+
+        width:
+            250px;
+
+        height:
+            300px;
+
+    }
+
+
+    /* SKILLS */
+
+    .skills {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+/* =====================================
+   HP KECIL
+===================================== */
+
+@media (max-width: 480px) {
+
+
+    .home h1 {
+
+        font-size:
+            40px;
+
+    }
+
+
+    .home h2 {
+
+        font-size:
+            18px;
+
+    }
+
+
+    .intro {
+
+        font-size:
+            15px;
+
+    }
+
+
+    .section-title {
+
+        font-size:
+            35px;
+
+    }
+
+
+    .buttons {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .btn {
+
+        text-align:
+            center;
+
+    }
+
+
+    .photo-circle {
+
+        width:
+            210px;
+
+        height:
+            260px;
+
+    }
+
+}

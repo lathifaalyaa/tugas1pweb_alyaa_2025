@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Portfolio Alyaa Mutiara Lathifa
+    </title>
+
+
+    <style>
+
+        /* =====================================
+           RESET
+        ===================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        /* =====================================
+           WARNA
+        ===================================== */
+
+        :root {
+
+            --blue-dark: #0b3d70;
+
+            --blue: #2585df;
+
+            --blue-light: #5aaeff;
+
+            --blue-soft: #eaf6ff;
+
+            --white: #ffffff;
+
+            --text: #173b5c;
+
+            --gray: #66829c;
+
+        }
+
+
+        /* =====================================
+           BODY
+        ===================================== */
+
+        body {
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: var(--text);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #f8fcff,
+                    #e9f6ff
+                );
+
+            line-height: 1.6;
+
+            overflow-x: hidden;
+
+        }
+
+
+        /* =====================================
+           NAVBAR
+        ===================================== */
+
+        .navbar {
+
+            width: 90%;
+
+            max-width: 1150px;
+
+            margin: 20px auto;
+
+            padding: 15px 25px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.92
+                );
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 35px
+                rgba(
+                    25,
+                    118,
+                    210,
+                    0.12
+                );
+
+            position: sticky;
+
+            top: 15px;
+
+            z-index: 1000;
+
+        }
+
+
+        .logo {
+
+            font-size: 27px;
+
+            font-weight: 800;
+
+            color:
+                var(--blue-dark);
+
+        }
+
+
+        .logo span {
+
+            color:
+                var(--blue);
+
+        }
+
+
+        .nav-menu {
+
+            display: flex;
+
+            gap: 28px;
+
+        }
+
+
+        .nav-menu a {
+
+            text-decoration: none;
+
+            color:
+                var(--text);
+
+            font-weight: 600;
+
+            transition: .3s;
+
+        }
+
+
+        .nav-menu a:hover {
+
+            color:
+                var(--blue);
+
+        }
+
+
+        .menu-btn {
+
+            display: none;
+
+            border: none;
+
+            background: none;
+
+            font-size: 25px;
+
+            color:
+                var(--blue-dark);
+
+            cursor: pointer;
+
+        }
+
+
+        /* =====================================
+           HOME
+        ===================================== */
+
+        .home {
+
+            width: 90%;
+
+            max-width: 1150px;
+
+            min-height: 650px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1.2fr
+                .8fr;
+
+            align-items: center;
+
+            gap: 50px;
+
+        }
+
+
+        .greeting {
+
+            font-size: 25px;
+
+            color:
+                var(--blue);
+
+            font-weight: bold;
+
+        }
+
+
+        .home h1 {
+
+            font-size:
+                clamp(
+                    42px,
+                    6vw,
+                    72px
+                );
+
+            line-height: 1;
+
+            color:
+                var(--blue-dark);
+
+            margin:
+                10px 0 20px;
+
+            letter-spacing: -2px;
+
+        }
+
+
+        .home h2 {
+
+            font-size: 22px;
+
+            color:
+                var(--blue);
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .intro {
+
+            max-width: 650px;
+
+            font-size: 17px;
+
+            color:
+                var(--gray);
+
+        }
+
+
+        /* =====================================
+           BUTTON
+        ===================================== */
+
+        .buttons {
+
+            display: flex;
+
+            gap: 15px;
+
+            margin-top: 30px;
+
+        }
+
+
+        .btn {
+
+            padding:
+                13px 27px;
+
+            border-radius:
+                30px;
+
+            text-decoration:
+                none;
+
+            font-weight:
+                bold;
+
+            transition:
+                .3s;
+
+        }
+
+
+        .btn-primary {
+
+            background:
+                var(--blue);
+
+            color:
+                white;
+
+        }
+
+
+        .btn-outline {
+
+            background:
+                white;
+
+            border:
+                2px solid
+                var(--blue);
+
+            color:
+                var(--blue);
+
+        }
+
+
+        .btn:hover {
+
+            transform:
+                translateY(-4px);
+
+            box-shadow:
+                0 10px 25px
+                rgba(
+                    25,
+                    118,
+                    210,
+                    .2
+                );
+
+        }
+
+
+        /* =====================================
+           FOTO
+        ===================================== */
+
+        .photo-container {
+
+            position: relative;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+
+        .photo-circle {
+
+            width: 330px;
+
+            height: 390px;
+
+            border-radius: 50%;
+
+            background:
+                #dff3ff;
+
+            border:
+                8px solid white;
+
+            outline:
+                5px solid
+                var(--blue-light);
+
+            box-shadow:
+                0 20px 50px
+                rgba(
+                    25,
+                    118,
+                    210,
+                    .25
+                );
+
+            overflow: hidden;
+
+        }
+
+
+        .photo-circle img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            object-position:
+                center center;
+
+            display: block;
+
+        }
+
+
+        /* =====================================
+           BULATAN DEKORASI
+        ===================================== */
+
+        .dot {
+
+            position: absolute;
+
+            border-radius: 50%;
+
+            background:
+                var(--blue-light);
+
+        }
+
+
+        .dot-1 {
+
+            width: 30px;
+
+            height: 30px;
+
+            top: 10px;
+
+            right: 20px;
+
+        }
+
+
+        .dot-2 {
+
+            width: 18px;
+
+            height: 18px;
+
+            bottom: 35px;
+
+            left: 15px;
+
+        }
+
+
+        .dot-3 {
+
+            width: 12px;
+
+            height: 12px;
+
+            top: 90px;
+
+            left: 20px;
+
+        }
+
+
+        /* =====================================
+           SECTION
+        ===================================== */
+
+        .section {
+
+            width: 90%;
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            padding: 90px 0;
+
+            text-align: center;
+
+        }
+
+
+        .section-label {
+
+            color:
+                var(--blue);
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 5px;
+
+        }
+
+
+        .section-title {
+
+            font-size: 45px;
+
+            color:
+                var(--blue-dark);
+
+            margin-bottom: 30px;
+
+        }
+
+
+        /* =====================================
+           ABOUT
+        ===================================== */
+
+        .about-box {
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    .85
+                );
+
+            padding: 35px;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 15px 40px
+                rgba(
+                    25,
+                    118,
+                    210,
+                    .1
+                );
+
+            color:
+                var(--gray);
+
+        }
+
+
+        .about-box p {
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .about-box strong {
+
+            color:
+                var(--blue-dark);
+
+        }
+
+
+        /* =====================================
+           RIWAYAT PENDIDIKAN
+        ===================================== */
+
+        .timeline {
+
+            max-width: 750px;
+
+            margin: auto;
+
+            text-align: left;
+
+            position: relative;
+
+        }
+
+
+        .timeline::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 3px;
+
+            background:
+                var(--blue-light);
+
+            top: 0;
+
+            bottom: 0;
+
+            left: 10px;
+
+        }
+
+
+        .timeline-item {
+
+            position: relative;
+
+            padding-left: 50px;
+
+            margin-bottom: 30px;
+
+        }
+
+
+        .timeline-dot {
+
+            position: absolute;
+
+            left: 0;
+
+            top: 20px;
+
+            width: 23px;
+
+            height: 23px;
+
+            border-radius: 50%;
+
+            background:
+                var(--blue);
+
+            border:
+                5px solid
+                #d9efff;
+
+        }
+
+
+        .timeline-content {
+
+            background:
+                white;
+
+            padding: 25px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 35px
+                rgba(
+                    25,
+                    118,
+                    210,
+                    .1
+                );
+
+        }
+
+
+        .date {
+
+            color:
+                var(--blue);
+
+            font-weight:
+                bold;
+
+            font-size: 14px;
+
+        }
+
+
+        .timeline-content h3 {
+
+            color:
+                var(--blue-dark);
+
+            margin:
+                5px 0;
+
+        }
+
+
+        /* =====================================
+           SKILLS
+        ===================================== */
+
+        .skills {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    1fr
+                );
+
+            gap: 20px;
+
+        }
+
+
+        .skill-card {
+
+            text-align: left;
+
+            background:
+                white;
+
+            padding: 30px;
+
+            border-radius: 22px;
+
+            box-shadow:
+                0 10px 35px
+                rgba(
+                    25,
+                    118,
+                    210,
+                    .1
+                );
+
+            transition:
+                .3s;
+
+        }
+
+
+        .skill-card:hover {
+
+            transform:
+                translateY(-8px);
+
+        }
+
+
+        .skill-number {
+
+            color:
+                var(--blue-light);
+
+            font-weight:
+                bold;
+
+        }
+
+
+        .skill-card h3 {
+
+            font-size:
+                25px;
+
+            color:
+                var(--blue-dark);
+
+            margin:
+                8px 0;
+
+        }
+
+
+        /* =====================================
+           CONTACT
+        ===================================== */
+
+        .contact {
+
+            width: 90%;
+
+            max-width: 800px;
+
+            margin: auto;
+
+            text-align: center;
+
+            padding: 100px 0;
+
+        }
+
+
+        .contact h2 {
+
+            font-size: 45px;
+
+            color:
+                var(--blue-dark);
+
+        }
+
+
+        .contact p {
+
+            color:
+                var(--gray);
+
+        }
+
+
+        .social-buttons {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+            margin-top: 25px;
+
+        }
+
+
+        .social-buttons a {
+
+            padding:
+                12px 25px;
+
+            border-radius:
+                25px;
+
+            background:
+                var(--blue);
+
+            color:
+                white;
+
+            text-decoration:
+                none;
+
+            font-weight:
+                bold;
+
+            transition:
+                .3s;
+
+        }
+
+
+        .social-buttons a:hover {
+
+            background:
+                var(--blue-dark);
+
+            transform:
+                translateY(-3px);
+
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        footer {
+
+            text-align: center;
+
+            padding: 25px;
+
+            background:
+                var(--blue-dark);
+
+            color: white;
+
+            font-size: 14px;
+
+        }
+
+
+        /* =====================================
+           RESPONSIVE
+        ===================================== */
+
+        @media (max-width: 800px) {
+
+            .menu-btn {
+
+                display: block;
+
+            }
+
+
+            .nav-menu {
+
+                display: none;
+
+                position: absolute;
+
+                top: 70px;
+
+                left: 0;
+
+                right: 0;
+
+                background: white;
+
+                border-radius: 15px;
+
+                padding: 15px;
+
+                flex-direction: column;
+
+                gap: 5px;
+
+                box-shadow:
+                    0 10px 30px
+                    rgba(
+                        0,
+                        0,
+                        0,
+                        .1
+                    );
+
+            }
+
+
+            .nav-menu.active {
+
+                display: flex;
+
+            }
+
+
+            .nav-menu a {
+
+                padding: 10px;
+
+                text-align: center;
+
+            }
+
+
+            .home {
+
+                grid-template-columns: 1fr;
+
+                text-align: center;
+
+                padding: 80px 0;
+
+            }
+
+
+            .intro {
+
+                margin: auto;
+
+            }
+
+
+            .buttons {
+
+                justify-content: center;
+
+            }
+
+
+            .photo-container {
+
+                order: -1;
+
+            }
+
+
+            .photo-circle {
+
+                width: 250px;
+
+                height: 300px;
+
+            }
+
+
+            .skills {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+
+        /* =====================================
+           HP KECIL
+        ===================================== */
+
+        @media (max-width: 480px) {
+
+            .home h1 {
+
+                font-size: 40px;
+
+            }
+
+
+            .home h2 {
+
+                font-size: 18px;
+
+            }
+
+
+            .intro {
+
+                font-size: 15px;
+
+            }
+
+
+            .section-title {
+
+                font-size: 35px;
+
+            }
+
+
+            .buttons {
+
+                flex-direction: column;
+
+            }
+
+
+            .btn {
+
+                text-align: center;
+
+            }
+
+
+            .photo-circle {
+
+                width: 210px;
+
+                height: 260px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         NAVBAR
+    ================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Alyea<span>.</span>
+        </div>
+
+
+        <div
+            class="nav-menu"
+            id="navMenu">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About Me
+            </a>
+
+            <a href="#education">
+                Pendidikan
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+
+        <button
+            class="menu-btn"
+            id="menuBtn">
+
+            ☰
+
+        </button>
+
+    </nav>
+
+
+
+    <!-- =================================
+         HOME
+    ================================== -->
+
+    <section
+        class="home"
+        id="home">
+
+
+        <div class="home-content">
+
+
+            <p class="greeting">
+                Hi, saya
+            </p>
+
+
+            <h1>
+
+                ALYAA MUTIARA
+                <br>
+                LATHIFA
+
+            </h1>
+
+
+            <h2>
+                Mahasiswa Teknologi Informasi
+            </h2>
+
+
+            <p class="intro">
+
+                Saya adalah mahasiswa Teknologi Informasi
+                di Universitas Jember yang sedang belajar
+                dan berkembang di dunia teknologi.
+
+                Saya tertarik dengan web development,
+                UI/UX, dan berbagai hal baru yang
+                berhubungan dengan teknologi.
+
+            </p>
+
+
+            <div class="buttons">
+
+
+                <a
+                    href="#about"
+                    class="btn btn-primary">
+
+                    About Me
+
+                </a>
+
+
+                <a
+                    href="#contact"
+                    class="btn btn-outline">
+
+                    Sosial Media
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- FOTO -->
+
+        <div class="photo-container">
+
+
+            <div class="photo-circle">
+
+                <img
+                    src="images/profile.jpg"
+                    alt="Foto Alyaa">
+
+            </div>
+
+
+            <div class="dot dot-1"></div>
+
+            <div class="dot dot-2"></div>
+
+            <div class="dot dot-3"></div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         ABOUT ME
+    ================================== -->
+
+    <section
+        class="section"
+        id="about">
+
+
+        <p class="section-label">
+            ABOUT ME
+        </p>
+
+
+        <h2 class="section-title">
+            Tentang Saya
+        </h2>
+
+
+        <div class="about-box">
+
+
+            <p>
+
+                Halo! Nama saya
+                <strong>
+                    Alyaa Mutiara Lathifa
+                </strong>.
+
+                Saya merupakan mahasiswa
+                Program Studi Teknologi Informasi
+                di Universitas Jember.
+
+            </p>
+
+
+            <p>
+
+                Saya memiliki ketertarikan
+                terhadap teknologi, khususnya
+                dalam bidang pengembangan website,
+                desain UI/UX, dan pemrograman.
+
+            </p>
+
+
+            <p>
+
+                Saya senang mempelajari hal-hal
+                baru dan terus mengembangkan
+                kemampuan untuk membuat website
+                yang menarik, responsive,
+                dan mudah digunakan.
+
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         RIWAYAT PENDIDIKAN
+    ================================== -->
+
+    <section
+        class="section education"
+        id="education">
+
+
+        <p class="section-label">
+            MY JOURNEY
+        </p>
+
+
+        <h2 class="section-title">
+            Riwayat Pendidikan
+        </h2>
+
+
+        <div class="timeline">
+
+
+            <!-- SMP -->
+
+            <div class="timeline-item">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-content">
+
+
+                    <span class="date">
+                        2019 - 2022
+                    </span>
+
+
+                    <h3>
+                        SMP / Sederajat
+                    </h3>
+
+
+                    <p>
+                        SMP Negeri 1 Panji.
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- SMA -->
+
+            <div class="timeline-item">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-content">
+
+
+                    <span class="date">
+                        2022 - 2025
+                    </span>
+
+
+                    <h3>
+                        SMA / Sederajat
+                    </h3>
+
+
+                    <p>
+                        SMA Negeri 1 Panji.
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- UNIVERSITAS -->
+
+            <div class="timeline-item">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-content">
+
+
+                    <span class="date">
+                        2025 - Sekarang
+                    </span>
+
+
+                    <h3>
+                        Universitas Jember
+                    </h3>
+
+
+                    <p>
+                        Fakultas Ilmu Komputer
+                    </p>
+
+
+                    <p>
+                        Program Studi
+                        Teknologi Informasi
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         SKILLS
+    ================================== -->
+
+    <section
+        class="section"
+        id="skills">
+
+
+        <p class="section-label">
+            MY SKILLS
+        </p>
+
+
+        <h2 class="section-title">
+            Yang Saya Pelajari
+        </h2>
+
+
+        <div class="skills">
+
+
+            <div class="skill-card">
+
+
+                <span class="skill-number">
+                    01
+                </span>
+
+
+                <h3>
+                    HTML
+                </h3>
+
+
+                <p>
+
+                    Membuat struktur dasar
+                    dan konten pada website.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="skill-card">
+
+
+                <span class="skill-number">
+                    02
+                </span>
+
+
+                <h3>
+                    CSS
+                </h3>
+
+
+                <p>
+
+                    Membuat tampilan website
+                    agar menarik dan responsive.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="skill-card">
+
+
+                <span class="skill-number">
+                    03
+                </span>
+
+
+                <h3>
+                    JavaScript
+                </h3>
+
+
+                <p>
+
+                    Membuat website menjadi
+                    lebih interaktif menggunakan DOM.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         CONTACT
+    ================================== -->
+
+    <section
+        class="contact"
+        id="contact">
+
+
+        <p class="section-label">
+            LET'S CONNECT
+        </p>
+
+
+        <h2>
+            Sosial Media
+        </h2>
+
+
+        <p>
+            Temukan saya melalui
+            sosial media berikut.
+        </p>
+
+
+        <div class="social-buttons">
+
+
+            <a
+                href="https://instagram.com/"
+                target="_blank">
+
+                Instagram
+
+            </a>
+
+
+            <a
+                href="https://github.com/"
+                target="_blank">
+
+                GitHub
+
+            </a>
+
+
+            <a
+                href="mailto:lathifaalyaa@gmail.com">
+
+                Email
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer>
+
+
+        <p>
+
+            ©
+            <span id="year"></span>
+
+            Alyaa Mutiara Lathifa
+
+        </p>
+
+
+        <p>
+
+            Made with HTML, CSS &
+            JavaScript
+
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script>
+
+
+        // ===============================
+        // MENU MOBILE
+        // ===============================
+
+        const menuBtn =
+            document.getElementById(
+                "menuBtn"
+            );
+
+
+        const navMenu =
+            document.getElementById(
+                "navMenu"
+            );
+
+
+        menuBtn.addEventListener(
+            "click",
+            function () {
+
+                navMenu.classList.toggle(
+                    "active"
+                );
+
+            }
+        );
+
+
+
+        // ===============================
+        // MENU TUTUP SETELAH DIKLIK
+        // ===============================
+
+        const navLinks =
+            document.querySelectorAll(
+                ".nav-menu a"
+            );
+
+
+        navLinks.forEach(
+            function (link) {
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+                        navMenu.classList.remove(
+                            "active"
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+
+
+        // ===============================
+        // TAHUN OTOMATIS
+        // ===============================
+
+        const year =
+            document.getElementById(
+                "year"
+            );
+
+
+        year.textContent =
+            new Date().getFullYear();
+
+
+
+        // ===============================
+        // ANIMASI SAAT SCROLL
+        // ===============================
+
+        const cards =
+            document.querySelectorAll(
+                ".about-box, .timeline-content, .skill-card"
+            );
+
+
+        const observer =
+            new IntersectionObserver(
+
+                function (entries) {
+
+                    entries.forEach(
+                        function (entry) {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target.style.opacity =
+                                    "1";
+
+                                entry.target.style.transform =
+                                    "translateY(0)";
+
+                            }
+
+                        }
+                    );
+
+                },
+
+                {
+                    threshold: 0.2
+                }
+
+            );
+
+
+        cards.forEach(
+            function (card) {
+
+                card.style.opacity =
+                    "0";
+
+                card.style.transform =
+                    "translateY(30px)";
+
+                card.style.transition =
+                    "all 0.7s ease";
+
+                observer.observe(card);
+
+            }
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>
